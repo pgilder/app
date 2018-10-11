@@ -1,0 +1,49 @@
+* {
+    font-family: roboto;
+}
+
+.bg-home {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+}
+
+.bg-image {
+    background-image: url(images/nomad.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.home-content {
+    color: #fff;
+    top: 50vh;
+    position: absolute;
+    text-align: -webkit-center;
+    width: 100vw;
+}
+
+h1.text {
+    font-size: 1.4em;
+    font-weight: 100;
+}
+
+button.btn1{
+    padding: 10px 20px;
+    background: #8bc34ade;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+button.btn2{
+    padding: 10px 20px;
+    background: #00bcd4d9;
+    border: 0;
+    border-radius: 5px;
+}

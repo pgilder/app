@@ -1,0 +1,133 @@
+<head>
+  <meta charset="utf-8">
+  <title>Mobile App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/framework.css">
+  <link rel="stylesheet" type="text/css" href="css/washington.css">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <script src="js/webfont.js"></script>
+  <!--<script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>-->
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/logoStandford32.ico">
+  <link rel="apple-touch-icon" href="images/logoStandford32.ico">
+
+  <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  {{> ApplicationLayout}}
+  <!-- {{> news}} -->
+  <!-- <script type="text/javascript" src="/js/jquery.min.js"></script> -->
+  <script type="text/javascript" src="/js/framework.js"></script>
+  <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
+</body>
+<template name="layout">
+  {{> yield region='header'}}
+  {{> yield}}
+  {{> yield region='footer'}}
+</template>
+
+<template name="ApplicationLayout">
+  <header>
+    {{> yield "header"}}
+  </header>
+
+  <aside>
+    {{> yield "aside"}}
+  </aside>
+
+  <article>
+    {{> yield}}
+  </article>
+
+  <footer>
+    {{> yield "footer"}}
+  </footer>
+</template>
+<!--
+<template name="test">
+
+
+</template>
+
+<template name="LayoutOne">
+  <div class="layout-one">
+    <h1>Layout One</h1>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Page 1 One</a>
+        </li>
+        <li>
+          <a href="/two">Page 1 Two</a>
+        </li>
+      </ul>
+    </nav>
+
+    <article>
+      {{> yield}}
+    </article>
+
+    <footer>
+      {{> yield "footer"}}
+    </footer>
+  </div>
+</template>
+
+<template name="LayoutTwo">
+  <div class="layout-two">
+    <h1>Layout Two</h1>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Page 2 One</a>
+        </li>
+        <li>
+          <a href="/two">Page 2 Two</a>
+        </li>
+      </ul>
+    </nav>
+
+    <article>
+      {{> yield}}
+    </article>
+
+    <footer>
+      {{> yield "footer"}}
+    </footer>
+  </div>
+</template>
+
+<template name="PageOne">
+  <h2>Page One</h2>
+
+  {{#contentFor "footer"}}
+    Page One Footer
+  {{/contentFor}}
+</template>
+
+<template name="PageTwo">
+  <h2>Page Two</h2>
+  <p>
+    Try changing the layout by setting Session.set('layout', 'LayoutTwo') in
+    the JavaScript console.
+  </p>
+</template>
+
+<template name="PageOneFooter">
+  <h1>Page One Footer</h1>
+</template>
+
+<template name="PageTwoFooter">
+  <h1>Page Two Footer</h1>
+</template>
+-->
